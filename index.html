@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+</head>
+<body>
+    <div class="mainbox">
+       
+    <div class="container">
+         <h2>TO-DO-LIST</h2>
+    <input id="taskinput"  type="text" placeholder="enter a task">
+    <button id="addtask">Add task</button>
+    <ul id="tasklist"></ul>
+    </div>
+    </div>
+    <script src="index.js"></script>
+    <style>
+        body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 24px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: Arial, sans-serif;
+}
+li {
+    border-bottom: 1px solid #ccc;
+}
+        .highlight{
+            text-decoration: line-through;
+            color: gray;
+        }
+        .mainbox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            height: 100vh;
+        }
+        .container{
+            background:white;
+            box-shadow: 5px 5px 5px gray;
+            width: 500px;
+            height: 500px;
+            border-radius: 10px;
+        }
+        #taskinput:focus{
+            outline: 2px solid lightblue; 
+           
+        }
+        #taskinput{
+             padding: 10px; 
+            width: 250px; 
+            border: 1px solid #bbb; 
+            border-radius: 6px;
+             font-size: 16px;
+        }
+  li {
+    display: grid;
+    grid-template-columns: 240px 190px;
+    align-items: center;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+
+   .button-group {
+    display: flex;
+    gap: 10px;
+}
+.complete{
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+     box-shadow: 2px 2px 5px gray;
+    background-color: violet;
+    color: white;
+    padding: 10px;
+}
+.deletebutton{
+text-decoration: none;
+    border: none;
+    border-radius: 10px;
+     box-shadow: 2px 2px 5px gray;
+    background-color:rebeccapurple;
+    color:red;
+    padding: 10px;
+}
+#taskinput{
+    padding:10px ;
+  
+}
+.addtask{
+     text-decoration: none;
+    border: none;
+    border-radius: 10px;
+     box-shadow: 2px 2px 5px gray;
+    background-color:brown;
+    color: white;
+    padding:10px ;
+}
+    </style>
+</body>
+</html>
